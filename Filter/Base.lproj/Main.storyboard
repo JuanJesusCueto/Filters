@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Filter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Skycraper" translatesAutoresizingMaskIntoConstraints="NO" id="8Zs-Bg-ZDi">
+                                <rect key="frame" x="0.0" y="20" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nLU-jR-I1m">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Nv9-aE-R6S">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQv-l6-h8f">
+                                                <rect key="frame" x="0.0" y="0.0" width="75" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="6QR-0z-cPq"/>
+                                                </constraints>
+                                                <state key="normal" title="New"/>
+                                                <connections>
+                                                    <action selector="onNewPhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OeN-iS-pXs"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iTv-pd-yHV">
+                                                <rect key="frame" x="75" y="0.0" width="75" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="P4z-XW-vtu"/>
+                                                </constraints>
+                                                <state key="normal" title="Filter"/>
+                                                <connections>
+                                                    <action selector="onFilter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JGU-gP-3CU"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kqr-4P-dgU">
+                                                <rect key="frame" x="150" y="0.0" width="75" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="Zs4-qv-afB"/>
+                                                </constraints>
+                                                <state key="normal" title="Edit"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ld-gj-JXp">
+                                                <rect key="frame" x="225" y="0.0" width="75" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="H00-cv-dcS"/>
+                                                </constraints>
+                                                <state key="normal" title="Compare"/>
+                                                <connections>
+                                                    <action selector="onCompare:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VYY-1l-sFB"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dEh-Pm-UnR">
+                                                <rect key="frame" x="300" y="0.0" width="75" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="4fZ-G8-INh"/>
+                                                </constraints>
+                                                <state key="normal" title="Share"/>
+                                                <connections>
+                                                    <action selector="onShare:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FRt-Gm-mew"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Nv9-aE-R6S" firstAttribute="leading" secondItem="nLU-jR-I1m" secondAttribute="leading" id="GRm-ip-XCi"/>
+                                    <constraint firstAttribute="trailing" secondItem="Nv9-aE-R6S" secondAttribute="trailing" id="O7P-GQ-xLh"/>
+                                    <constraint firstAttribute="bottom" secondItem="Nv9-aE-R6S" secondAttribute="bottom" id="T7C-8Q-SGJ"/>
+                                    <constraint firstAttribute="height" constant="44" id="WRl-UA-tPz"/>
+                                    <constraint firstItem="Nv9-aE-R6S" firstAttribute="top" secondItem="nLU-jR-I1m" secondAttribute="top" id="v7l-f5-moq"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="l61-Tu-VCd">
+                                <rect key="frame" x="0.0" y="20" width="375" height="603"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8Zs-Bg-ZDi" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="1ES-Cd-eaM"/>
+                            <constraint firstItem="nLU-jR-I1m" firstAttribute="top" secondItem="l61-Tu-VCd" secondAttribute="bottom" id="2Mw-Hy-r57"/>
+                            <constraint firstItem="nLU-jR-I1m" firstAttribute="top" secondItem="8Zs-Bg-ZDi" secondAttribute="bottom" id="B9J-LF-l2L"/>
+                            <constraint firstItem="nLU-jR-I1m" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="FkR-hZ-lYg"/>
+                            <constraint firstItem="l61-Tu-VCd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="H1v-ax-bXO"/>
+                            <constraint firstItem="nLU-jR-I1m" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VJo-za-OgL"/>
+                            <constraint firstItem="nLU-jR-I1m" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="cdF-4K-3w1"/>
+                            <constraint firstItem="8Zs-Bg-ZDi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rKf-GS-gjh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="l61-Tu-VCd" secondAttribute="trailing" id="tT1-oC-dsE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8Zs-Bg-ZDi" secondAttribute="trailing" id="v0m-AC-eWv"/>
+                            <constraint firstItem="l61-Tu-VCd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ztp-6W-G67"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="bottomMenu" destination="nLU-jR-I1m" id="c6H-bR-hkF"/>
+                        <outlet property="brightButton" destination="K6N-Gk-Qdb" id="ewx-jg-XOs"/>
+                        <outlet property="compareButton" destination="9Ld-gj-JXp" id="Hnt-k0-zzP"/>
+                        <outlet property="editButton" destination="kqr-4P-dgU" id="bff-e2-3q3"/>
+                        <outlet property="filterButton" destination="iTv-pd-yHV" id="UXE-BG-lzr"/>
+                        <outlet property="filterImage" destination="l61-Tu-VCd" id="odv-Jy-0PZ"/>
+                        <outlet property="imageView" destination="8Zs-Bg-ZDi" id="8ut-lY-WQv"/>
+                        <outlet property="secondaryMenu" destination="Gep-26-VKS" id="Gge-Tp-AYC"/>
+                        <outlet property="warmButton" destination="rHZ-t9-PQ6" id="RWM-KM-bnl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="Gep-26-VKS">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="HoM-TM-Ab9">
+                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K6N-Gk-Qdb">
+                                    <rect key="frame" x="0.0" y="0.0" width="120" height="128"/>
+                                    <state key="normal" title="Bright"/>
+                                    <connections>
+                                        <action selector="onBrightFilter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TOq-Mo-VBO"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rHZ-t9-PQ6">
+                                    <rect key="frame" x="120" y="0.0" width="120" height="128"/>
+                                    <state key="normal" title="Warm"/>
+                                    <connections>
+                                        <action selector="onWarmFilter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h3R-41-P7f"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="P0G-ua-66h" firstAttribute="trailing" secondItem="HoM-TM-Ab9" secondAttribute="trailing" id="O3I-73-5Vn"/>
+                        <constraint firstItem="HoM-TM-Ab9" firstAttribute="top" secondItem="P0G-ua-66h" secondAttribute="top" id="g9b-uj-4xR"/>
+                        <constraint firstItem="HoM-TM-Ab9" firstAttribute="leading" secondItem="P0G-ua-66h" secondAttribute="leading" id="lSo-SL-eTP"/>
+                        <constraint firstItem="P0G-ua-66h" firstAttribute="bottom" secondItem="HoM-TM-Ab9" secondAttribute="bottom" id="nsJ-Wi-fWW"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="P0G-ua-66h"/>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="140" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Skycraper" width="642" height="720"/>
+    </resources>
+</document>
